@@ -1,0 +1,23 @@
+{
+  "name": "rna",
+  "version": "1.0.0",
+  "description": "A Artificial Neural Network",
+  "main": "main.js",
+  "dependencies": {
+    "@electron/remote": "^2.0.1",
+    "chart.js": "^3.5.1",
+    "neat-csv": "^6.0.1",
+    "read-excel-file": "^5.2.9",
+    "save": "^2.4.0"
+  },
+  "devDependencies": {
+    "electron": "^14.0.1"
+  },
+  "scripts": {
+    "start": "electron .",
+    "electron-trace": "electron --trace-warnings ."
+  },
+  "keywords": [],
+  "author": "YKhiro",
+  "license": "ISC"
+}

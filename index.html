@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <title>Artificial Neural Network</title>
+
+  <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+  <div id="StartCalc">
+    <input id="SelecionarTipo" type="submit" value="SELECIONE">
+    <ul id="SelectionBox">
+      <li><input id="SelecionarTipoTraining" type="submit" value="TREINAMENTO"></li>
+      <li><input id="SelecionarTipoCalc" type="submit" value="CÁLCULO"></li>
+    </ul>
+    <button id="start" type="submit">
+      START
+    </button>
+  </div>
+
+  <div id="ConfigDosPesos">
+    <h1>Configuração dos Pesos</h1>
+    <div id="EspacoPesos">
+      <div id="inputPesos">
+        <p>Nº de Neuronios na Camada Oculta</p>
+        <input id="NumeroNeuronios" type="number" placeholder=" Nº">
+        <input id="myButton" type="submit" value="CRIAR">
+      </div>
+      <input id="myButtonImportar" type="submit" value="IMPORTAR PESOS">
+      <input id="AleatorioButton" type="submit" value="Pesos aleatórios">
+      <div id="labelOculta">Oculta</div>
+      <div id="labelBiasOc">BiasOc</div>
+      <div id="labelSaida">Saida</div>
+      <ul id="AdicionaPesos">
+      </ul>
+    </div>
+  </div>
+
+  <div id="setTraining">
+    <form>
+      <label for="inputAlfa">Alfa</label>
+      <input id="inputAlfa" type="number" value="0">
+    </form>
+    <form>
+      <label for="inputAlfa">Coeficiente de aprendizado</label>
+      <input id="inputAprendizado" type="number" value="0.3">
+    </form>
+    <form>
+      <label for="inputAlfa">Numero maximo de ciclos</label>
+      <input id="inputCiclos" type="number" value="10000">
+    </form>
+    <form>
+      <label for="inputAlfa">Erro (Critério de parada)</label>
+      <input id="inputErro" type="number" value="0.01">
+    </form>
+
+  </div>
+
+  <div id="calculo">
+    <input id="inputValor" type="number">
+    <input id="inputSet" type="submit" value="SET">
+  </div>
+
+  <div id="resultadoCalculo">
+    <label for="resultsBox">OUTPUT</label>
+    <div id="resultsBox">
+
+    </div>
+  </div>
+
+  <div id="graficoBox">
+    <canvas id="graficoErro"></canvas>
+  </div>
+
+  <div id="graficoBoxSaida">
+    <canvas id="graficoErroSaida"></canvas>
+  </div>
+
+
+  <div id="DataEspaco">
+    <input id="DataColector" type="submit" value="DATA">
+    <ul id="DataTraining">
+
+    </ul>
+
+  </div>
+
+
+
+</body>
+<script src="javascripts/render.js"></script>
+
+</html>

@@ -1,0 +1,363 @@
+/*RESSET*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+input, button, textarea {
+    border: 0;
+}
+html{
+    background-color: rgb(7, 10, 46);
+}
+
+#ConfigDosPesos{
+    position: relative;
+    margin: 20px;
+    background-color: rgb(28, 28, 54);
+    border: 1px solid rgb(69, 89, 133);
+    width: 400px;
+    height: 500px;
+    z-index: 1;
+    overflow-y: scroll;
+}
+#ConfigDosPesos h1{
+    position: relative;
+    width: fit-content;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: cornsilk;
+    font-size: 24px;
+}
+#EspacoPesos{
+    position: relative;
+    width: 100%;
+    right: 10px;
+    margin:  10px;
+    z-index: 2;  
+}
+#inputPesos{
+    position: relative;
+    right: -260px;
+    width: 120px;
+    color: ghostwhite;
+}
+#inputPesos p{
+    position: relative;
+    right: 250px;
+    width: 270px;
+    top: 20px;
+}
+#NumeroNeuronios{
+    position: relative;
+    text-align: center;
+    background-color: rgb(166, 192, 223);
+    width: 50px;
+    height: 25px;
+    z-index: 2;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+#myButton{
+    width: 50px;
+    height: 25px;
+    background-color: rgb(103, 102, 163);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+#myButtonImportar{
+    position: relative;
+    top: 15px;
+    left: 40px;
+    width: 150px;
+    height: 25px;
+    background-color: rgb(103, 102, 163);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+
+#AleatorioButton{
+    position: relative;
+    top: -10px;
+    height: 25px;
+    width: 120px;
+    display: none;
+    left: 220px;
+    background-color: rgb(103, 102, 163);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+#labelOculta{
+    color: white;
+    position: absolute;
+    top: 90px;
+    left: 90px;
+}
+#labelBiasOc{
+    color: white;
+    position: absolute;
+    top: 90px;
+    left: 173px;
+}
+#labelSaida{
+    color: white;
+    position: absolute;
+    top: 90px;
+    left: 260px;
+}
+
+#AdicionaPesos{
+    position: relative;
+    width: fit-content;
+    top: 40px;
+    left: 20px;
+    color: white;
+    list-style-type: none;
+}
+#AdicionaPesos li{
+    position: relative;
+    margin: 10px;  
+}
+#AdicionaPesos label{
+    position: relative;
+    left: -5px;
+    margin: 10px;  
+}
+#AdicionaPesos input{
+    position: relative;
+    margin-left: 4px;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    background-color: rgb(166, 192, 223);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+/*STAR CALCULO*/
+
+#StartCalc{
+ background-color: rgb(28, 28, 54);
+ border: 1px solid rgb(69, 89, 133);
+ width: 200px;
+ height: 200px;
+ margin: 20px;
+}
+#StartCalc ul{
+    position: relative;
+    top: 20px;
+    left: 50%;
+    display: none;
+    transform: translateX(-50%);
+    width: 150px;
+    background-color: rgb(148, 147, 216);
+    list-style-type: none;
+ }
+ #StartCalc ul input{
+    position: relative;
+    height: 25px;
+    width: 100%;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(89, 97, 141);
+    text-align: center;
+    background-color: transparent;
+ }
+ #SelecionarTipo{
+     position: absolute;
+     top: 20px;
+     left: 50%;
+     transform: translateX(-50%);
+    color: white;
+    position: relative;
+    width: 150px;
+    height: 25px;
+   background-color: rgb(103, 102, 163);
+}
+ #StartCalc button{
+     color: rgb(0, 0, 0);
+     font-size: 30px;
+     font-weight: 900;
+     position: relative;
+     top: 110px;
+     left: 35px;
+     width: 130px;
+     height: 50px;
+    background-color: rgb(103, 102, 163);
+    border-radius: 6px;
+ }
+ #DataEspaco{
+    background-color: rgb(28, 28, 54);
+    border: 1px solid rgb(47, 60, 88);
+    position: absolute;
+    width: 430px;
+    height: 500px;
+    top: 240px;
+    color: white;
+    left: 450px;
+    overflow-y: scroll;
+ } 
+ #DataColector{
+    position: relative;
+    top: 30px;
+    left: 130px;
+    width: 150px;
+    height: 25px;
+   background-color: rgb(103, 102, 163);
+   border-radius: 6px;
+ }
+ #DataTraining{
+    position: relative;
+    width: fit-content;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    list-style-type: none;
+}
+#DataTraining li{
+    position: relative;
+    margin: 10px;  
+}
+#DataTraining label{
+    position: relative;
+    left: -5px;
+    margin: 10px;  
+}
+#DataTraining input{
+    position: relative;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    background-color: rgb(166, 192, 223);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+ #calculo{
+    background-color: rgb(28, 28, 54);
+    border: 1px solid rgb(69, 89, 133);
+     position: absolute;
+     display: none;
+     height: 200px;
+     width: 320px;
+     top: 20px;
+     left: 240px;
+ }
+ #setTraining{
+    background-color: rgb(28, 28, 54);
+     position: absolute;
+     border: 1px solid rgb(69, 89, 133);
+     display: block;
+     height: 200px;
+     width: 320px;
+     top: 20px;
+     left: 240px;
+ }
+ #setTraining input{
+    background-color: rgb(166, 192, 223);
+    text-align: end;
+     height: 25px;
+     width: 100px;
+     border-radius: 6px;
+ }
+ #setTraining :nth-child(1){
+    left: 161px;
+ }
+ 
+ #setTraining :nth-child(2){
+     left: 15px;
+ }
+ #setTraining :nth-child(3){
+
+     left: 21px;
+ }
+ #setTraining :nth-child(4){
+
+     left: 31px;
+ }
+ #setTraining form{
+    position: relative;
+    color: white;
+    top: 25px;
+    margin: 0;
+    margin-top: 10px;
+    margin-right: 0;
+ }
+
+
+ #inputSet {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 25px;
+   background-color: rgb(103, 102, 163);
+   border-radius: 6px;
+}
+#inputValor {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background-color: rgb(166, 192, 223);
+   border-radius: 6px;
+}
+#resultadoCalculo{
+    background-color: rgb(28, 28, 54);
+    border: 1px solid rgb(69, 89, 133);
+     position: absolute;
+     height: 200px;
+     width: 300px;
+     top: 20px;
+     left: 580px;
+     z-index: 5;
+}
+#resultadoCalculo label{
+    position: relative;
+    top: 60px;
+    left: 120px;
+    color: white;
+}
+#resultsBox{
+    color: rgb(6, 14, 59);
+    position: absolute;
+    font-size: 15px;
+    text-align: center;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 25px;
+    background-color: rgb(166, 192, 223);
+   border-radius: 6px;
+}
+
+#graficoBox{
+    position: relative;
+    width: 500px;
+    height: 260px;
+    background-color: rgb(166, 192, 223);
+    top: -740px;
+    left: 900px;
+}
+#graficoBoxSaida{
+    position: relative;
+    width: 500px;
+    height: 260px;
+    background-color: rgb(166, 192, 223);
+    top: -720px;
+    left: 900px;
+}
