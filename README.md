@@ -1,3 +1,5 @@
 # ANN-Function-Calculator
 A software that can aproximate functions using Artificial Neural Network (MLP)
-/nInstall node and electron!
+
+
+Install node and electron!
